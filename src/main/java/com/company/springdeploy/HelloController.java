@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Value("${app.message}")  // value de application.properties
-    String message;
+    //@Value("${app.message}")  // value de application.properties
+    //String message;
 
     @GetMapping("/saludo")
     public String saludo(){
-        System.out.println(message);
+        //System.out.println(message);
         return "Hello World desde Spring Boot REST FULL Services";
     }
 
