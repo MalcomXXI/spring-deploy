@@ -1,18 +1,13 @@
 package com.company.springdeploy;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
 
-    //@Value("${app.message}")  // value de application.properties
-    //String message;
-
     @GetMapping("/saludo")
     public String saludo(){
-        //System.out.println(message);
         return "Hello World desde Spring Boot REST FULL Services";
     }
 

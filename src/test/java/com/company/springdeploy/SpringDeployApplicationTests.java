@@ -8,9 +8,7 @@ class SpringDeployApplicationTests {
 
 	@Test     // CON ESTO SE PUEDE IMPRIMIR LAS VARIABLES DE ENTORNO
 	void contextLoads() {
-			System.getenv().forEach(
-					(key, value) -> System.out.println(key + " " + value)
-			);
+
 	}
 
 }
